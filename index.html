@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-5.9.0-web/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/animate.css-master/animate.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Clinica Araja</title>
+</head>
+
+<body>
+    <!--Header Start-->
+    <header id="Home">
+        <div class="container-fluid header">
+            <div class="row first-header-row">
+                <div class="column logo col-xl-4 col-12 animated slideInLeft slower">
+                    <img src="./images/logo.jpg" alt="Logo">
+                </div>
+                <div class="column header-contact col-12 col-xl-8 animated slideInRight slow">
+                    <p>
+                        <strong class="fas fa-map-marker-alt"></strong>
+                        <span> 5201 Harrisburg Blvd, Ste C, Houston, TX 77011</span>
+                    </p>
+                    <p>
+                        <strong class="fas fa-phone-alt"></strong>
+                        <span>(713) 588-3333</span>
+                    </p>
+                    <p>
+                        <strong class="fas fa-fax"></strong>
+                        <span>(832) 834-6075</span>
+                    </p>
+                    <p>
+                        <strong class="fas fa-envelope"></strong>
+                        <span>info@clinicaaraja.com</span>
+                    </p>
+                </div>
+            </div>
+
+            <nav>
+                <div class="row second-header-row">
+                    <div class="column">
+                        <ul class="d-flex header-ul">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                            <li><a href="privacy.html">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="column header-icon">
+                        <a href="#"><strong class="fab fa-facebook-f"></strong></a>
+                        <a href="#"><strong class="fab fa-twitter"></strong></a>
+                        <a href="#"><strong class="fab fa-youtube"></strong></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!--SlideShow-->
+    <section>
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li class="item1 active"></li>
+                <li class="item2"></li>
+                <li class="item3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/online-marketing-hIgeoQjS_iE-unsplash.jpg" alt="Los Angeles" height="500">
+                    <div class="carousel-caption">
+                        <h1>MISSION</h1>
+                        <p>The Mission of our Clinicaaraja is to deliver humanistic, cost-effective,
+                            and culturally competent heath services to the customers.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/kendal-james-L4iKccAChOc-unsplash.jpg" alt="Chicago" height="500">
+                    <div class="carousel-caption">
+                        <h1>VISION</h1>
+                        <p>To be the Best Public Clinic in the Country</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/zach-vessels-tJsma0u4GYM-unsplash.jpg" alt="New York" height="500">
+                    <div class="carousel-caption">
+                        <h1>VALUE STATEMENT</h1>
+                        <p>Our goal is to promote access to services, quality of care,
+                            patient safety, customer satisfaction staff morale, resourse management,
+                            effective partnership, and academic excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+    <!--Slide Show End-->
+
+    <!--Contact section-->
+    <section class="Contact-us" id="Contact">
+        <div class="container-fluid section-row">
+            <div class="row d-flex justify-content-around">
+                <div class="column info-col">
+                    <h1 class="text-left">Contact Information</h1>
+                    <p>
+                        <strong class="fas fa-map-marker-alt"></strong>
+                        <span> 5201 Harrisburg Blvd, Ste C, Houston, TX 77011</span>
+                    </p>
+                    <p>
+                        <strong class="fas fa-phone-alt"></strong>
+                        <span>(713) 588-3333</span>
+                    </p>
+                    <p>
+                        <strong class="fas fa-fax"></strong>
+                        <span>(832) 834-6075</span>
+                    </p>
+                    <p>
+                        <strong class="fas fa-envelope"></strong>
+                        <span>info@clinicaaraja.com</span>
+                    </p>
+                </div>
+                <div class="column col-md-offset-1 contact-form">
+                    <h1 class="text-left">Leave Us A Message</h1>
+                    <form id="contactForm" action="/contact" method="post" class="was-validated"
+                        onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <div class="row">
+                                <label for="Username" class="label col-md-4 control-label">Username:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="Username" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="Email" class="label col-md-4 control-label">Email:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="Email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="Password" class="label col-md-4 control-label">Password:</label>
+                                <div class="col-md-8">
+                                    <input type="password" class="form-control" id="Password" minlength="8" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="Phone_No" class="label col-md-4 control-label">Phone No:</label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="Phone_No" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <label for="Message" class="label col-md-4 control-label">Message:</label>
+                                <div class="col-md-8">
+                                    <textarea name="message" class="form-control" cols="30" rows="10"
+                                        id="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center button">
+                                    <label for="Submit" class="label col-md-4 control-label"> </label>
+                                <input type="submit" class="btn btn-primary my-4" id="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact Section End-->
+
+    <footer class="footer page-footer">
+        <div class="container">
+            <div class="row d-flex justify-content-between footer-row">
+                <div class="column ">
+                    <p>&copy;All Right Reserved</p>
+                </div>
+                <div class="column footer-icon">
+                    <a href="#"><strong class="fab fa-facebook-f"></strong></a>
+                    <a href="#"><strong class="fab fa-twitter"></strong></a>
+                    <a href="#"><strong class="fab fa-youtube"></strong></a>
+                    <a class="btn btn-warning mx-3" href="#Home"><em class="fas fa-arrow-up"></em></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

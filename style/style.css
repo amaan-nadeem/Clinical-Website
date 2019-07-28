@@ -1,0 +1,349 @@
+
+.logo img{
+    margin-left: 2.7em;
+    width: 280px;
+}
+.header-contact{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-contact p{
+    margin-right: 0.8em;
+}
+
+
+.header-contact span{
+font-size: 12px;
+color: gray;
+font-weight: bold;
+}
+.header-contact strong{
+    color: red;
+    font-size: 1.3em;
+}
+
+nav{
+    border-top: 1px solid gray;
+}
+.second-header-row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header-icon{
+    margin-right: 9em;
+}
+
+.header-icon strong{
+    margin-right: 1em;
+    color: black;
+}
+
+
+.header-icon strong:hover{
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+.header-ul{
+    display: flex;
+    list-style-type: none;
+}
+.header-ul li{
+    margin-left: 30px;
+    cursor: pointer;
+    
+}
+
+.header-ul li a:hover{
+    border-bottom: 3px solid red;
+    padding-bottom: 3px;
+    transition: .3s ease-in;
+}
+
+.header-ul li a{
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.8);
+    text-decoration: none;
+}
+
+@media(max-width: 1200px){
+    .logo{
+        text-align: center;
+    }
+    .header-contact{
+        justify-content: center;
+    }
+    .logo img{
+        margin: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .header-contact{
+        display: none;
+    }
+}
+
+@media(max-width:900px){
+    .header-ul li{
+        margin-left: 15px;
+    }
+
+    .second-row-header{
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:1200px){
+    .header-icon{
+        margin-right: 0;
+    }
+}
+
+@media(max-width:450px){
+    .header-icon{
+        display: none;
+    }
+}
+/* Header End */
+section{
+    margin-top: -10px;
+}
+.carousel-inner img{
+    width: 100%;
+}
+
+.carousel-caption h1 {
+    font-weight: bold;
+    font-family: 'B612', sans-serif;
+}
+.carousel-caption p{
+    font-weight: 500;
+}
+
+.carousel-caption:hover{
+    background-color: red;
+    color: black !important;
+    transition: 0.5s ease-in-out;
+}
+
+.carousel-caption{
+    background-color:rgba(0, 0, 0, 1);
+    padding: 0px 15px 0px 15px;
+    border-radius: 12px;
+    color: red !important; 
+}
+/* Services */
+#services{
+    margin-top: 20px;
+}
+
+#services h3, p{
+    font-family: 'B612', sans-serif;
+}
+.service-box{
+    padding: 35px 15px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid transparent;
+    background-color: lightseagreen;
+    transition: all 0.3s ease 0s;
+}
+
+.service-box h4, .service-box strong{
+    text-align: center;
+}
+.services-row ul{
+    list-style-type: square;
+}
+
+.service-box:hover{
+    background: red;
+    color: #222222;
+    border: none;
+}
+.service-box:before{
+    content:"";
+    width: 40px;
+    height: 40px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: white white rgba(1, 1, 1, 0.2) rgba(1, 1, 1, 0.2);
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    transition: all 0.3s ease 0s;
+}
+
+.service-box:hover:before{
+    top: 0;
+    right: 0;
+}
+
+.service-box strong{
+    display: block;
+    font-size: 65px;
+    margin-bottom: 14px;
+    transition: all 0.3s ease 0s;
+    margin-left: 0.1em;
+    color: red;
+}
+
+.service-box .title{
+    font-size: 18px;
+    font-weight: 900;
+    color: #545454;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 0 16px 0;
+    transition: all 0.3s ease 0s;
+}
+
+.service-box .description li{
+    font-size: 17px;
+    color: #545454;
+    line-height: 30px;
+    margin: 0;
+    font-weight: 500
+}
+
+.service-box:hover strong,
+.service-box:hover .title,
+.service-box:hover .description{
+    color: white;
+}
+
+
+#services h3{
+    font-weight: bold;
+    font-size: 50px;
+}
+#services p{
+    font-size: 30px;
+    color: red;
+}
+
+
+@media(max-width:578px){
+    .service-box{
+        margin-bottom: 30px;
+    }
+}
+
+
+/* Contact Information */
+
+.Contact-us{
+    background:linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url('../images/web-hosting-3Mhgvrk4tjM-unsplash.jpg') no-repeat center center;
+    background-position: center;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.Contact-us h1, .Contact-us p, .Contact-us strong{
+   color: red;
+}
+
+.Contact-us h1{
+font-size: 3em;
+}
+
+
+.info-col{
+    margin-top: 30px;
+    box-shadow: 0px 1px 50px 10px black;
+    padding: 0px 30px 0px 30px;
+}
+
+
+.info-col p{
+    font-size: 20px;
+}
+
+.info-col p span{
+    margin-left: 20px;
+}
+.Contact-us form span{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+.contact-form{
+    margin-top: 30px;
+    box-shadow: 0px 1px 50px 10px black;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0px 30px 0px 30px;
+}
+
+.label{
+    font-weight: normal;
+    margin-top: 15px;
+    color: white;
+    font-size: 19px;
+}
+
+.form-control{
+    background: transparent;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid white;
+    font-size: 10px;
+    margin-top: 15px;
+    height: 40px;
+    color: white;
+}
+.form-control:focus{
+    outline: none;
+    border: 0px transparent;
+}
+
+.btn-primary{
+    margin-top: 20px;
+    font-size: 30px !important;
+    color: white !important;
+    padding: 0px 30px 5px 30px !important ;
+}
+
+/* Privacy Section */
+.privacy-main{
+    font-weight: bold;
+    color: red;
+}
+.heading{
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.7);
+}
+
+/* footer */
+footer{   
+    color: red;
+    border-top: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.15)
+}
+
+.footer-row{
+    margin-top: 20px;
+}
+
+.footer-icon strong{
+    margin-right: 20px;
+    color: black;
+}
+
+.footer-icon strong:hover{
+    color: red;
+    transition: 0.2s ease-in-out;
+}
+
+.footer-icon a{
+    margin-top: -8px;
+}
+
+.footer-icon strong{
+    text-align: center;
+}
